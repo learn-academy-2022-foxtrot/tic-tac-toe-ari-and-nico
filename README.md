@@ -16,9 +16,11 @@ When creating a project it is important to think about organization of your code
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
   - Established an array containing all the win conditions, then used a for loop to check the value of squares against the win conditions. Used an alert to let the user know they've won.
 - As a user, I can't continue playing the game after the game has been won.
+    - Added a reset function that resets the board on win.
 
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.
 - As a user, I can click on a restart button that will clear the game board.
+    - Added a button which will reset the board onclick
 
 ### 🏔 Stretch Goals
 
