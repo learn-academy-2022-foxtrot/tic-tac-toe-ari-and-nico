@@ -49,7 +49,8 @@ const App = () => {
   const handleGamePlay = (index) => {
     let updateBoard = [...squares];
 
-    if (
+    if (updateBoard[index] !== null) { alert("Tie") }
+    else if (
       turn % 2 === 0 &&
       updateBoard[index] !== "🎃" &&
       updateBoard[index] !== "🎄"
