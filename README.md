@@ -7,13 +7,16 @@ When creating a project it is important to think about organization of your code
 ### 📚 User Stories
 
 - As a user, I can see a three by three grid game board on the page.
-    -populated app.js with squares by using map, and lined them up with flexbox
+  -populated app.js with squares by using map, and lined them up with flexbox
 - As a user, I can click on a square to mark it.
 - As a user, my partner can click on a square after me and see their mark.
-    -we added a turn state to determine the player turn, and added fucntionality for box click
+  -we added a turn state to determine the player turn, and added fucntionality for box click
 - As a user, I can't click on a square that has already been marked.
+  - added a logical operator (&&) to make sure the square doesn't already contain one of the player values
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
+  - Established an array containing all the win conditions, then used a for loop to check the value of squares against the win conditions. Used an alert to let the user know they've won.
 - As a user, I can't continue playing the game after the game has been won.
+
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.
 - As a user, I can click on a restart button that will clear the game board.
 
