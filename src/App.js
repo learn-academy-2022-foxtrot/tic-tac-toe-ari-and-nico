@@ -33,12 +33,17 @@ const App = () => {
         squares[a] === squares[c]
       ) {
         alert("You win!");
+        handleReset()
       }
       // console.log("[a, b, c]");
 
       // If what playermoves contains is === to [a,b,c] in wins, then you win
     }
   };
+  const handleReset = () => {
+    setSquares(Array(9).fill(null))
+    setTurn(0)
+  }
   console.log(handleWin());
 
   const handleGamePlay = (index) => {
@@ -73,6 +78,7 @@ const App = () => {
   return (
     <>
       <h1>Tic Tac Toe</h1>
+      <button onClick={handleReset} >reset</button>
       <div className="game_container">
         {squares.map((squares, index) => {
           return (
@@ -82,9 +88,11 @@ const App = () => {
               key={index}
               index={index}
             />
+
           );
         })}
       </div>
+
     </>
   );
 };
